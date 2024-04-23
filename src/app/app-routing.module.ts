@@ -7,11 +7,11 @@ import { Error404Component } from './error404/error404.component';
 import { DetallesComponent } from './detalles/detalles.component';
 
 const routes: Routes = [
-  { path:'lista-libros' , component: ListaDeLibrosComponent },
-  { path:'acerca-de' , component: AcercaDeComponent },
-  { path:'detalles/:libroId' , component: DetallesComponent },
+  { path:'books-list' , component: ListaDeLibrosComponent },
+  { path:'about' , component: AcercaDeComponent },
+  { path:'datails/:bookId' , component: DetallesComponent },
   { path:'404' , component: Error404Component },
-  { path:'' , redirectTo: 'lista-libros' , pathMatch: 'full' },
+  { path:'' , redirectTo: 'books-list' , pathMatch: 'full' },
   { path:'**' , redirectTo: '404' }
 ];
 

@@ -7,16 +7,16 @@ import { Error404Component } from './error404/error404.component';
 import { DetallesComponent } from './detalles/detalles.component';
 
 const routes: Routes = [
-  { path:'books-list' , component: ListaDeLibrosComponent },
-  { path:'about' , component: AcercaDeComponent },
-  { path:'datails/:bookId' , component: DetallesComponent },
+  { path: 'books-list', component: ListaDeLibrosComponent },
+  { path: 'about', component: AcercaDeComponent },
+  /* { path:'datails/:bookId' , component: DetallesComponent },
   { path:'404' , component: Error404Component },
   { path:'' , redirectTo: 'books-list' , pathMatch: 'full' },
-  { path:'**' , redirectTo: '404' }
+  { path:'**' , redirectTo: '404' }*/
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

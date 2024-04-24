@@ -9,14 +9,10 @@ import { DetallesComponent } from './detalles/detalles.component';
 const routes: Routes = [
   { path: 'books-list', component: ListaDeLibrosComponent },
   { path: 'about', component: AcercaDeComponent },
+  { path: 'datails/:bookId', component: DetallesComponent },
   { path: '', redirectTo: 'books-list', pathMatch: 'full' },
   { path: '404', component: Error404Component },
   { path: '**', redirectTo: '404' },
-
-  /*
-  { path:'datails/:bookId' , component: DetallesComponent },
-  ,
-*/
 ];
 
 @NgModule({
